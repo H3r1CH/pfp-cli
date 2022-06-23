@@ -26,5 +26,37 @@ Commands:
 ```
 
 ## Enumeration
+```bash
+pfp-cli enum --help
+WARNING: No libpcap provider available ! pcap won't be used
+Usage: pfp-cli enum [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  dir
+  sub
+```
+
+### Directory Busting
+```bash
+pfp-cli enum dir --help
+WARNING: No libpcap provider available ! pcap won't be used
+Usage: pfp-cli enum dir [OPTIONS] URL FILE [EXT]
+
+Arguments:
+  URL    URL to bust  [required]
+  FILE   Wordlist to use  [required]
+  [EXT]  File Extension  [default: ]
+
+Options:
+  --help  Show this message and exit.
+```
+```bash
+pfp-cli enum dir 10.10.10.1 wordlist.txt php
+```
+
+### Subdomain Busting
 
 ## Scanning
