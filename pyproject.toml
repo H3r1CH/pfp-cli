@@ -12,6 +12,7 @@ pfp-cli = "pfp_cli.main:app"
 python = "^3.10"
 typer = {extras = ["all"], version = "^0.4.1"}
 requests = "^2.28.0"
+scapy = "^2.4.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
